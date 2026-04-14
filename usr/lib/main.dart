@@ -101,6 +101,25 @@ class MainMenuScreen extends StatelessWidget {
                 'World Life Simulator',
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
               ),
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: Colors.greenAccent.withOpacity(0.9),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.block, size: 16, color: Colors.black87),
+                    SizedBox(width: 6),
+                    Text(
+                      '100% Ad-Free & No Payments',
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black87),
+                    ),
+                  ],
+                ),
+              ),
               const SizedBox(height: 40),
               ElevatedButton.icon(
                 onPressed: () {
